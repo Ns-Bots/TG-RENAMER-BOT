@@ -1,0 +1,84 @@
+{
+    "name": "TG Renamer Bot",
+    "description": "The Telegram file renamer bot based on Pyrogram.",
+    "logo": "https://telegra.ph/file/8324a0863fed98d4dfb6c.jpg",
+
+    "keywords": [
+        "telegram",
+        "bot",
+        "best",
+        "renamer"
+    ],
+
+    "repository": "https://github.com/Ns-AnoNymouS/Renamer",
+    "stack": "heroku-20",
+    "website": "https://t.me/Ns_bot_updates",
+    "success_url": "https://t.me/RenamerNs_bot",
+
+    "env": {
+        "API_HASH": {
+            "description": "Your API_HASH, Get it from https://my.telegram.org/"
+        },
+        "API_ID": {
+            "description": "Your API_ID, Get it from https://my.telegram.org/"
+        },
+        "AUTH_USERS": {
+            "description": "list of Auth users who can access bot without password and have rights to use admin commands",
+            "required": false
+        },
+        "BANNED_USERS": {
+            "description": "list of banned users whom you want to stop from using your bot sperate each user by whitespace.",
+            "required": false
+        },
+        "BOT_TOKEN": {
+            "description": "Get it from @BotFather"
+        },
+        "BOT_PASSWORD": {
+            "description": "If you want to use the bot private you can set a password to use only by your.",
+            "required": false
+        },
+        "CUSTOM_CAPTION": {
+            "description": "A default caption to be added to the file at bottom",
+            "required": false
+        },
+        "FORCE_SUB": {
+            "description": "A telegram channel username without @ to force users to join channel before using bot.",
+            "required": false
+        },
+        "OWNER_ID": {
+            "description": "Your Telegram user id, Get this from @FileStore_Nsbot."
+        },
+        "ENV": {
+            "description": "Set it to anything to enable configuration by environment variables.",
+            "value": "ANYTHING"
+        },
+        "TIME_GAP": {
+            "description": "Set the timegap in sec to reduce FloodWait. If you don't want to add leave empty. ",
+            "required": false
+        },
+        "TRACE_CHANNEL": {
+            "description": "A telegram channel or group link to know who are using bot",
+            "required": false
+        }
+    },
+
+    "addons": [
+        {
+            "plan": "heroku-postgresql",
+            "options": {"version": "12"}
+        }
+    ],
+
+    "buildpacks": [{
+        "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        },{
+        "url": "heroku/python"
+    }],
+
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
