@@ -3,7 +3,7 @@ from pyrogram.emoji import *
 class TEXT:
     DOWNLOAD_START = f"Downloading Starts soon {SLEEPING_FACE}"
     UPLOAD_START = f"Upload Starting Soon {SLEEPING_FACE}"
-    UPLOAD_SUCESS = f"Thanks for using [me]()"
+    UPLOAD_SUCESS = f"Thanks for using [me](https://github.com/Ns-AnoNymouS/TG-RENAMER-BOT)"
     BANNED_USER_TEXT = f"Hey bro, you are **banned** from using me {FACE_WITH_TEARS_OF_JOY}."
     NOT_LOGGED_TEXT = f"This bot was only for private use {LOCKED_WITH_KEY}. If you want to use this bot you need to send me correct password in the format `/login bot_password`"
     SAVED_CUSTOM_THUMBNAIL = f"Thumbnail Saved Permanently {NOTEBOOK_WITH_DECORATIVE_COVER}"
@@ -49,14 +49,14 @@ I am a telegram renamer with permanent thumbnail.
 """
 
 
-    DONATE_USER = """💗 𝙏𝙝𝙖𝙣𝙠𝙨 𝙛𝙤𝙧 𝙨𝙝𝙤𝙬𝙞𝙣𝙜 𝙞𝙣𝙩𝙚𝙧𝙚𝙨𝙩 𝙞𝙣 𝙙𝙤𝙣𝙖𝙩𝙞𝙤𝙣.
+    DONATE_USER = """**__Thanks for showing interest in donation.__**
  
-𝐃𝐨𝐧𝐚𝐭𝐞 𝐮𝐬 𝐓𝐨 𝐤𝐞𝐞𝐩 𝐨𝐮𝐫 𝐬𝐞𝐫𝐯𝐢𝐜𝐞𝐬 𝐜𝐨𝐧𝐭𝐢𝐧𝐮𝐨𝐮𝐬 𝐚𝐥𝐢𝐯𝐞😢
-𝐲𝐨𝐮 𝐜𝐚𝐧 𝐬𝐞𝐧𝐝 𝐚𝐧𝐲 𝐚𝐦𝐨𝐮𝐧𝐭
-𝐨𝐟 𝟐𝟎𝐫𝐬 , 𝟑𝟎𝐫𝐬, 𝟓𝟎𝐫𝐬, 𝟕𝟎𝐫𝐬, 𝟏𝟎𝟎𝐫𝐬, 𝟐𝟎𝟎𝐫𝐬 😊
+Donate us to keep our services continously alive
+You can send any amount 
+of 20rs, 30rs, 50rs, 70rs, 100rs, 200rs
  
-📨 𝘗𝘢𝘺𝘮𝘦𝘯𝘵 𝘔𝘦𝘵𝘩𝘰𝘥: 
+__--Payment Methods:--__
  
 GooglePay / Paytm / PhonPay / paypal / Net Banking
  
-👲 For Donate: message me @MaxxRiderz"""
+**For Donate:** message me @MaxxRiderz"""
