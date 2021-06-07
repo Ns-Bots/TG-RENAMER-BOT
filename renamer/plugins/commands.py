@@ -41,7 +41,7 @@ async def help(c, m, cb=False):
 async def start(c, m, cb=False):
     owner = await c.get_users(Config.OWNER_ID)
     button = [[
-        InlineKeyboardButton(f'{MAN_TEACHER_LIGHT_SKIN_TONE} My Owner', url='https://t.me/Ns_AnoNymous'),
+        InlineKeyboardButton(f'{MAN_TEACHER_LIGHT_SKIN_TONE} My Owner', url='https://t.me/doreamonfans1'),
         InlineKeyboardButton(f'{ROBOT} About', callback_data='about')
         ],[
         InlineKeyboardButton(f'{INFORMATION} Help', callback_data="help"),
