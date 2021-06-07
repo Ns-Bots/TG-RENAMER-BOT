@@ -21,6 +21,8 @@ Please Give a ⭐ if you like this repo and also try following me for more best 
 
 [TODO 🤧](https://github.com/Ns-Bots/TG-RENAMER-BOT#todo-)
 
+[Thanks And Credits 🎉](https://github.com/Ns-Bots/TG-RENAMER-BOT#thanks-and-credits-)
+
 ## Deploy to Heroku 🗳
 Press the following button to deploy in heroku.
 
@@ -99,3 +101,5 @@ login - (when password is given) to login to bot
 [SpEcHiDe](https://github.com/SpEcHiDe) for his [AnyDlBot](https://github.com/SpEcHiDe/AnyDLBot)
 
 [Dan](https://telegram.dog/haskell) for his [Pyrogram](https://github.com/pyrogram/pyrogram)
+
+[MaheshMalekar ❤](https://telegram.dog/MaheshMalekar) for teaching me python
