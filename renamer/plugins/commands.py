@@ -134,6 +134,8 @@ async def reset_user(c, m):
 @RenamerNs.on_message(filters.command('login') & filters.incoming & filters.private)
 async def password(c, m):
     if Config.BOT_PASSWORD:
+        if Config.AUTH_USERS is None:
+            Config.AUTH_USERS = [Config.OWNER_ID]
         if m.from_user.id in Config.AUTH_USERS:
             return await m.reply_text(f"__Hey you are auth user of this bot so you don't want to login {DETECTIVE_LIGHT_SKIN_TONE}.__")
 
