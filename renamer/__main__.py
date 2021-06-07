@@ -9,9 +9,9 @@ logging.getLogger().setLevel(logging.INFO)
 logging.getLogger().setLevel(logging.ERROR)
 logging.getLogger().setLevel(logging.WARNING)
 
-import os
+import platform
 from .config import Config
-from pyrogram import Client
+from pyrogram import Client, __version__, idle
 from pyromod import listen
 
 
@@ -24,11 +24,20 @@ def main():
                  plugins=dict(root="renamer/plugins"),
                  workers=100)
 
-    if not os.path.isdir(Config.DOWNLOAD_LOCATION):
-        os.makedirs(Config.DOWNLOAD_LOCATION)
+    me = await Renamer.get_me()
+    startup_msg = f"""Successfully deployed your Renamer in @{me.username}
+Pyrogram Version: V{__version__}
+Python Version: V{platform.python_version()}
 
-    Renamer.run()
+Thanks for deploying our bot. Please give a start to my repo and join @Ns_bot_updates.
+"""
+    print(startup_msg)
+    Renamer.start()
 
+    await idle()
+
+    Renamer.stop()
+    print("Ok bye bye 😢.")
 
 if __name__ == "__main__":
     main()
