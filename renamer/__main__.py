@@ -24,7 +24,7 @@ def main():
                  plugins=dict(root="renamer/plugins"),
                  workers=100)
 
-    me = await Renamer.get_me()
+    me = Renamer.get_me()
     startup_msg = f"""Successfully deployed your Renamer in @{me.username}
 Pyrogram Version: V{__version__}
 Python Version: V{platform.python_version()}
@@ -34,7 +34,7 @@ Thanks for deploying our bot. Please give a start to my repo and join @Ns_bot_up
     print(startup_msg)
     Renamer.start()
 
-    await idle()
+    idle()
 
     Renamer.stop()
     print("Ok bye bye 😢.")
