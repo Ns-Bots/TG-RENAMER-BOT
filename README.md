@@ -94,3 +94,8 @@ login - (when password is given) to login to bot
 - [ ] Adding broadcast command 
 - [ ] Adding ban and unban commands
 - [ ] Increasing error handlers
+
+## Thanks And Credits 🎉
+[SpEcHiDe](https://github.com/SpEcHiDe) for his [AnyDlBot](https://github.com/SpEcHiDe/AnyDLBot)
+
+Dan for his [Pyrogram](https://github.com/pyrogram/pyrogram)
