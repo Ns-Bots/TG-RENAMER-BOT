@@ -9,7 +9,7 @@ class Config:
     OWNER_ID =  int(os.environ.get("OWNER_ID", ""))
     AUTH_USERS = list(int(i) for i in os.environ.get("AUTH_USERS", "").split(" ")) #if os.environ.get("AUTH_USERS", "") else []
     print(AUTH_USERS)
-    AUTH_USERS = AUTH_USERS.insert(1, 7)
+    AUTH_USERS = AUTH_USERS.append(1)
     print(AUTH_USERS)
     BANNED_USERS = [int(i) for i in os.environ.get("BANNED_USERS", "").split(" ")] if os.environ.get("BANNED_USERS", "") else None
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
