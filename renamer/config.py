@@ -7,7 +7,7 @@ class Config:
     API_ID = int(os.environ.get("API_ID", 12345))
     API_HASH = os.environ.get("API_HASH")
     OWNER_ID =  int(os.environ.get("OWNER_ID", ""))
-    AUTH_USERS = set(int(i) for i in os.environ.get("AUTH_USERS", "").split(" ")) #if os.environ.get("AUTH_USERS", "") else []
+    AUTH_USERS = list(int(i) for i in os.environ.get("AUTH_USERS", "").split(" ")) #if os.environ.get("AUTH_USERS", "") else []
     print(AUTH_USERS)
     AUTH_USERS = AUTH_USERS.insert(1, 7)
     print(AUTH_USERS)
