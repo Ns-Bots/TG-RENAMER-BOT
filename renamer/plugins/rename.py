@@ -40,6 +40,7 @@ async def media(c, m):
     await file_name.request.delete()
     new_file_name = file_name.text
     if new_file_name.lower() == "/cancel":
+        await m.delete()
         return
 
     if Config.TIME_GAP:
@@ -47,6 +48,7 @@ async def media(c, m):
         if time_gap:
             return
         Config.TIME_GAP_STORE[m.from_user.id] = time.time()
+        asyncio.get_event_loop().create_task(notify(m, Config.TIME_GAP))
 
     send_message = await m.reply_text(TEXT.DOWNLOAD_START)
     trace_msg = None
@@ -161,3 +163,7 @@ async def media(c, m):
         os.remove(new_file_location)
     except:
         pass
+
+async def notify(m, time_gap):
+    await asyncio.sleep(time_gap)
+    await m.reply_text("__You can use me Now__")
