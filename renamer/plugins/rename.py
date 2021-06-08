@@ -163,6 +163,6 @@ async def media(c, m):
     except:
         pass
 
-async def notify(m, time_gap)
+async def notify(m, time_gap):
     await asyncio.sleep(time_gap)
     await m.reply_text("__You can use me Now__")
