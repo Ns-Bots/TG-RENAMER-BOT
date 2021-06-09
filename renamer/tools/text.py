@@ -32,9 +32,8 @@ class TEXT:
     HELP_USER = """**Follow Below Steps:**
    
 ☞︎︎︎ Use /mode command to change upload mode.
-☞︎︎︎ Send a photo to set as permanent thumbnail.
-☞︎︎︎ Now send me the Telegram file you want to rename.
-☞︎︎︎ Send the new name when bot ask.
+☞︎︎︎ Reply with /savethumbnail to a photo to set as permanent thumbnail.
+☞︎︎︎ Now send me the Telegram file and reply with /rename in the format `/rename Newfilename`.
 
 For source code check about
 """
