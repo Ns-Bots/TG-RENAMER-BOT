@@ -1,5 +1,5 @@
 # Renamer-Bot
-This is a renamer bot for groups😉
+I think this repo gonna become one of the best renamer open source 🥰.
 
 Please Give a ⭐ if you like this repo and also try following me for more best open source codes<br><br>
 [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes/blue?icon=github)](https://github.com/Ns-Bots/TG-RENAMER-BOT)
@@ -52,6 +52,7 @@ Press the following button to deploy in heroku.
 - `BOT_TOKEN:` Get the bot token from [Bot Father <img src="https://telegra.ph/file/8d80c13110506bf1cb58e.jpg" width="30" height="30">](https://telegram.dog/BotFather)
 
 - `OWNER_ID:` Your Telegram user id, Get this value from [@FileStore_Nsbot](https://telegram.dog/FileStore_Nsbot)
+
 
 ## Optional Vars 💬
 - `AUTH_USERS:` List of Auth User IDs separated by whitespace and who had right to use admin commands.
