@@ -29,8 +29,6 @@ Press the following button to deploy in heroku.
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Ns-Bots/TG-RENAMER-BOT)
 
 ## Bot Features 🔥
-- Support only in Channel
-
 - Renaming Telegram files as file or video.
 
 - Trace Channel to track the users what they are doing with your bot.
@@ -54,8 +52,6 @@ Press the following button to deploy in heroku.
 - `BOT_TOKEN:` Get the bot token from [Bot Father <img src="https://telegra.ph/file/8d80c13110506bf1cb58e.jpg" width="30" height="30">](https://telegram.dog/BotFather)
 
 - `OWNER_ID:` Your Telegram user id, Get this value from [@FileStore_Nsbot](https://telegram.dog/FileStore_Nsbot)
-
-- `AUTH_GROUP:` Your Telegram group id in which bot should work.
 
 ## Optional Vars 💬
 - `AUTH_USERS:` List of Auth User IDs separated by whitespace and who had right to use admin commands.
