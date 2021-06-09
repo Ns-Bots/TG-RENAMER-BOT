@@ -7,11 +7,11 @@ from ..tools.text import TEXT
 from ..database.database import *
 from pyrogram import Client as RenamerNs, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+from pyrogram.emoji import *
 
 
 ################## Saving thumbnail 🖼 ##################
 
-@RenamerNs.on_message(filters.photo & filters.incoming & filters.private)
 async def save_photo(c, m):
     if Config.BANNED_USERS:
         if m.from_user.id in Config.BANNED_USERS:
@@ -22,9 +22,15 @@ async def save_photo(c, m):
         if not is_logged and not Config.AUTH_USERS:
             return await m.reply_text(TEXT.NOT_LOGGED_TEXT, quote=True)
 
+    if not m.reply_to_message:
+        return await m.reply_text("__Reply to a photo to save it as permanent thumbnail__", quote=True)
+
+    if not m.reply_to_message.photo:
+        return await m.reply_text(f"**Reply to a photo {HOT_FACE}**", quote=True)
+
     download_location = f"{Config.DOWNLOAD_LOCATION}/{m.from_user.id}.jpg"
-    await update_thumb(m.from_user.id, m.message_id)
-    await m.download(file_name=download_location)
+    await update_thumb(m.from_user.id, m.reply_to_message.message_id)
+    await m.reply_to_message.download(file_name=download_location)
 
     await m.reply_text(
         text=TEXT.SAVED_CUSTOM_THUMBNAIL,
@@ -34,7 +40,6 @@ async def save_photo(c, m):
 
 ################## Deleting permanent thumbnail 🗑 ##################
 
-@RenamerNs.on_message(filters.command("deletethumbnail") & filters.incoming & filters.private)
 async def delete_thumbnail(c, m):
     if Config.BANNED_USERS:
         if m.from_user.id in Config.BANNED_USERS:
@@ -67,7 +72,6 @@ async def delete_thumbnail(c, m):
 
 ################## Sending permanent thumbnail 🕶 ##################
 
-@RenamerNs.on_message(filters.command("showthumbnail") & filters.incoming & filters.private)
 async def show_thumbnail(c, m):
     if Config.BANNED_USERS:
         if m.from_user.id in Config.BANNED_USERS:

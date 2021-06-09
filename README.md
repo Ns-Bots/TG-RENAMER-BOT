@@ -19,8 +19,6 @@ Please Give a ⭐ if you like this repo and also try following me for more best 
 
 [Dev 🧑‍💻](https://github.com/Ns-Bots/TG-RENAMER-BOT#dev-)
 
-[TODO 🤧](https://github.com/Ns-Bots/TG-RENAMER-BOT#todo-)
-
 [Thanks And Credits 🎉](https://github.com/Ns-Bots/TG-RENAMER-BOT#thanks-and-credits-)
 
 ## Deploy to Heroku 🗳
@@ -29,7 +27,7 @@ Press the following button to deploy in heroku.
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Ns-Bots/TG-RENAMER-BOT)
 
 ## Bot Features 🔥
-- Support only in Channel
+- Support only in Group.
 
 - Renaming Telegram files as file or video.
 
@@ -75,7 +73,9 @@ Press the following button to deploy in heroku.
 ## Available Commands 🤖
 ```
 start - check whether bot is alive or not
+rename - reply to the media with new name
 mode - change video upload mode to file or video
+savethumbnail - reply to a photo to save as permanent thumbnail 
 showthumbnail - to check permanent thumbnail
 deletethumbnail - to delete the permanent thumbnail
 help - know how to use the bot
@@ -94,11 +94,6 @@ login - (when password is given) to login to bot
 <a href="https://youtube.com/channel/UC9NnqJ63aSzv457iUMM06vQ"><img src="https://img.shields.io/badge/YouTube-Channel-FF3333.svg?logo=youtube&logoColor=FF3333"></a>
 <p align="left">
 </p>
-
-## TODO 🤧
-- [ ] Adding broadcast command 
-- [ ] Adding ban and unban commands
-- [ ] Increasing error handlers
 
 ## Thanks And Credits 🎉
 [SpEcHiDe](https://github.com/SpEcHiDe) for his [AnyDlBot](https://github.com/SpEcHiDe/AnyDLBot)
