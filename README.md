@@ -1,5 +1,5 @@
 # Renamer-Bot
-I think this repo gonna become one of the best renamer open source 🥰.
+This is a renamer bot for groups😉
 
 Please Give a ⭐ if you like this repo and also try following me for more best open source codes<br><br>
 [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes/blue?icon=github)](https://github.com/Ns-Bots/TG-RENAMER-BOT)
@@ -29,6 +29,8 @@ Press the following button to deploy in heroku.
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Ns-Bots/TG-RENAMER-BOT)
 
 ## Bot Features 🔥
+- Support only in Channel
+
 - Renaming Telegram files as file or video.
 
 - Trace Channel to track the users what they are doing with your bot.
@@ -53,6 +55,7 @@ Press the following button to deploy in heroku.
 
 - `OWNER_ID:` Your Telegram user id, Get this value from [@FileStore_Nsbot](https://telegram.dog/FileStore_Nsbot)
 
+- `AUTH_GROUP:` Your Telegram group id in which bot should work.
 
 ## Optional Vars 💬
 - `AUTH_USERS:` List of Auth User IDs separated by whitespace and who had right to use admin commands.
