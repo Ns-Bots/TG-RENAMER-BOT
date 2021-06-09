@@ -3,12 +3,12 @@ logger = logging.getLogger(__name__)
 
 import datetime
 from ..config import Config
-from pyrogram import Client, filters
+from pyrogram import Client as RenamerNs, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.errors import UserNotParticipant, ChatAdminRequired, UsernameNotOccupied
 
 
-@Client.on_message(filters.private & filters.incoming)
+@RenamerNs.on_message(filters.chat(chats=Config.AUTH_GROUP))
 async def force_sub(c, m):
     if Config.FORCE_SUB:
         try:
@@ -41,3 +41,15 @@ async def force_sub(c, m):
 
     await m.continue_propagation()
 
+
+@RenamerNs.on_message(~filters.chat(chats=Config.AUTH_GROUP))
+async def spam_user(c, m):
+    buttons = [[
+        InlineKeyboardButton('Repo', url='https://github.com/Ns-Bots/TG-RENAMER-BOT'),
+        InlineKeyboardButton('Deploy', url='https://heroku.com/deploy?template=https://github.com/Ns-Bots/TG-RENAMER-BOT')
+        ],[
+        InlineKeyboardButton('Repo For Group',  url='https://github.com/Ns-Bots/TG-RENAMER-BOT/tree/for-group'),
+        InlineKeyboardButton('Deploy For Group', url='https://heroku.com/deploy?template=https://github.com/Ns-Bots/TG-RENAMER-BOT/tree/for-group')
+    ]]
+    await m.reply_text("I wont work for you. If you want make your own bot", reply_markup=InlineKeyboardMarkup(buttons))
+    await m.chat.leave()
