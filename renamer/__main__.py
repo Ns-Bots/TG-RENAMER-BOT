@@ -10,8 +10,10 @@ logging.getLogger().setLevel(logging.ERROR)
 logging.getLogger().setLevel(logging.WARNING)
 
 import platform
+from .plugins import *
 from .config import Config
 from pyrogram import Client, __version__, idle
+from pyrogram.handlers import CallbackQueryHandler, MessageHandler
 from pyromod import listen
 
 
@@ -26,6 +28,66 @@ def main():
 
     Renamer.start()
     me = Renamer.get_me()
+
+    Renamer.add_handler(MessageHandler(
+        media,
+        filters=filters.command(['rename', f'rename@{me.username}'])
+        & filters.chat(chats=Config.AUTH_GROUP),
+    ))
+
+    Renamer.add_handler(MessageHandler(
+        help,
+        filters=filters.command(['help', f'help@{me.username}'])
+        & filters.chat(chats=Config.AUTH_GROUP),
+    ))
+
+    Renamer.add_handler(MessageHandler(
+        about,
+        filters=filters.command(['about', f'about@{me.username}'])
+        & filters.chat(chats=Config.AUTH_GROUP),
+    ))
+
+    Renamer.add_handler(MessageHandler(
+        start,
+        filters=filters.command(['start', f'start@{me.username}'])
+        & filters.chat(chats=Config.AUTH_GROUP),
+    ))
+
+    Renamer.add_handler(MessageHandler(
+        set_mode,
+        filters=filters.command(['mode', f'mode@{me.username}'])
+        & filters.chat(chats=Config.AUTH_GROUP),
+    ))
+
+    Renamer.add_handler(MessageHandler(
+        reset_user,
+        filters=filters.command(['reset', f'reset@{me.username}'])
+        & filters.chat(chats=Config.AUTH_GROUP),
+    ))
+
+    Renamer.add_handler(MessageHandler(
+        password,
+        filters=filters.command(['login', f'login@{me.username}'])
+        & filters.chat(chats=Config.AUTH_GROUP),
+    ))
+
+    Renamer.add_handler(MessageHandler(
+        save_photo,
+        filters=filters.command(['savethumbnail', f'savethumbnail@{me.username}'])
+        & filters.chat(chats=Config.AUTH_GROUP),
+    ))
+
+    Renamer.add_handler(MessageHandler(
+        delete_thumbnail,
+        filters=filters.command(['deletethumbnail', f'deletethumbnail@{me.username}'])
+        & filters.chat(chats=Config.AUTH_GROUP),
+    ))
+
+    Renamer.add_handler(MessageHandler(
+        show_thumbnail,
+        filters=filters.command(['showthumbnail', f'showthumbnail@{me.username}'])
+        & filters.chat(chats=Config.AUTH_GROUP),
+    ))
 
     startup_msg = f"Successfully deployed your Renamer at @{me.username}\n"
     startup_msg += f"Pyrogram Version: V{__version__}\n"
