@@ -23,7 +23,7 @@
             "description": "Your API_ID, Get it from https://my.telegram.org/"
         },
         "AUTH_USERS": {
-            "description": "list of Auth users who can access bot without password and have rights to use admin commands",
+            "description": "list of Auth user Id who can access bot without password and have rights to use admin commands",
             "required": false
         },
         "BANNED_USERS": {
@@ -57,7 +57,7 @@
             "required": false
         },
         "TRACE_CHANNEL": {
-            "description": "A telegram channel or group link to know who are using bot",
+            "description": "A telegram channel or group id to know who are using bot",
             "required": false
         }
     },
