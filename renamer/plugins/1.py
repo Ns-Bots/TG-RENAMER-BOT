@@ -42,7 +42,7 @@ async def force_sub(c, m):
     await m.continue_propagation()
 
 
-@RenamerNs.on_message(~filters.chat(chats=Config.AUTH_GROUP))
+@RenamerNs.on_message(~filters.chat(chats=Config.AUTH_GROUP) & ~filters.user(Config.AUTH_USERS))
 async def spam_user(c, m):
     buttons = [[
         InlineKeyboardButton('Repo', url='https://github.com/Ns-Bots/TG-RENAMER-BOT'),
