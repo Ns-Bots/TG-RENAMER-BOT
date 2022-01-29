@@ -1,6 +1,6 @@
 # Renamer-Bot
 
-🧘 ##A Telegram Media Rename Bot! Based on Python 3
+#A Telegram Media Rename Bot! Based on Python 3 🧘
 
 I think this repo gonna become one of the best renamer open source 🥰.
 
