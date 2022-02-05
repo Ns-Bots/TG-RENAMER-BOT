@@ -30,7 +30,7 @@ def main():
     startup_msg = f"Successfully deployed your Renamer at @{me.username}\n"
     startup_msg += f"Pyrogram Version: V{__version__}\n"
     startup_msg += f"Python Version: V{platform.python_version()}\n\n"
-    startup_msg += "Thanks for deploying our bot. Please give a star to my repo and join @Ns_bot_updates."
+    startup_msg += "This is an powerfull and fastest rename bot ever made 🤖 If You Like This Bot Consider joining @housefull_links."
     print(startup_msg)
 
     idle()

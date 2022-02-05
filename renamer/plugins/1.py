@@ -37,7 +37,7 @@ async def force_sub(c, m):
                 if m.from_user.id in Config.AUTH_USERS:
                     return await m.reply_text("Forcesub username must be a channel username Not yours or any other users username")
             logger.error(e)
-            return await m.reply_text("Some thing went wrong. Try again and if same issue occur contact [our group](https://t.me/Ns_Bot_supporters)", disable_web_page_preview=True, quote=True)
+            return await m.reply_text("Some thing went wrong. Try again and if same issue occur contact [our group](https://t.me/Hf_links)", disable_web_page_preview=True, quote=True)
 
     await m.continue_propagation()
 
