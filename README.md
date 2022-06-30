@@ -1,5 +1,9 @@
 # Renamer-Bot
 
+# OWNER OF THIS REPO:
+👉 [![NS ANONYMOUS !](https://img.shields.io/badge/🤔%20Ask%20me-anything-1abc9c.svg)](https://telegram.dog/The_proGrammerr)
+
+
 #A Telegram Media Rename Bot! Based on Python 3 🧘
 
 I think this repo gonna become one of the best renamer open source 🥰.
@@ -103,6 +107,8 @@ login - (when password is given) to login to bot
 - [ ] Adding broadcast command 
 - [ ] Adding ban and unban commands
 - [ ] Increasing error handlers
+- [ ] Prefix custom name
+- [ ] Some settings for Admins
 
 ## Thanks And Credits 🎉
 [SpEcHiDe](https://github.com/SpEcHiDe) for his [AnyDlBot](https://github.com/SpEcHiDe/AnyDLBot)
@@ -110,3 +116,7 @@ login - (when password is given) to login to bot
 [Dan](https://telegram.dog/haskell) for his [Pyrogram](https://github.com/pyrogram/pyrogram)
 
 [MaheshMalekar ❤](https://telegram.dog/MaheshMalekar) for teaching me python
+
+[MaxxRider 🔥](https://telegram.dog/MaxxRider) for Help & Support
+
+======================== Thank You 💟 ====================
