@@ -1,7 +1,7 @@
 # Renamer-Bot
 
 # OWNER OF THIS REPO:
-👉 [![NS ANONYMOUS 🔥]](https://telegram.dog/The_proGrammerr)
+👉 [NS ANONYMOUS 🔥](https://telegram.dog/The_proGrammerr)
 
 
 #A Telegram Media Rename Bot! Based on Python 3 🧘
