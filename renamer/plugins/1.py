@@ -13,7 +13,7 @@ async def force_sub(c, m):
     if Config.FORCE_SUB:
         try:
             chat = await c.get_chat_member(Config.FORCE_SUB, m.from_user.id)
-            if chat.status=='kicked':
+            if chat.status=='banned':
                 return await m.reply_text('Hai you are kicked from my updates channel. So, you are not able to use me',  quote=True)
 
         except UserNotParticipant:
